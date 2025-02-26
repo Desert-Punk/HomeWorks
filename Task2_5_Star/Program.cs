@@ -5,8 +5,7 @@
         static void Main(string[] args)
         {
             Console.Write("Введите длину трубы в метрах: ");
-            string input = Console.ReadLine();
-            double length = Convert.ToDouble(input);
+            double length = Convert.ToDouble(Console.ReadLine());
 
             double roundedLength = Math.Round(length * 2, MidpointRounding.AwayFromZero) / 2;
 
@@ -14,4 +13,3 @@
         }
     }
 }
- 

@@ -1,10 +1,20 @@
-﻿namespace Task3_8
+﻿namespace Task3_08
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Введите число:");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            if (number >= -10 && number <= 10)
+            {
+                Console.WriteLine("Да");
+            }
+            else
+            {
+                Console.WriteLine("Нет");
+            }
         }
     }
 }

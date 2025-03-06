@@ -4,7 +4,20 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            int firstNumber = Convert.ToInt32(Console.ReadLine());
+            int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+            if (firstNumber == secondNumber)
+            {
+                Console.WriteLine("=");
+            }
+            else
+            {
+                string max = ">";
+                string min = "<";
+                string nubers = (firstNumber > secondNumber) ? max : min;
+                Console.WriteLine(nubers);
+            }
         }
     }
 }
